@@ -35,11 +35,11 @@ env/
 .DS_Store
 
 # Data files (keep structure, ignore large CSV files)
-data/*.csv
+# data/*.csv
 !data/.gitkeep
 
 # Results
-results/*.json
+# results/*.json
 results/*.png
 !results/.gitkeep
 
