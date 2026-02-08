@@ -1,0 +1,49 @@
+{
+  "baseline": {
+    "timestamp": "2026-02-08T10:30:45.123456",
+    "python_version": "3.14.0 (main, Oct 15 2025, 12:00:00) [GCC 11.4.0]",
+    "jit_enabled": false,
+    "num_runs": 5,
+    "total_records": 100000,
+    "run_times": [47.32, 47.18, 47.45, 47.28, 47.51],
+    "statistics": {
+      "mean": 47.348,
+      "std_dev": 0.128,
+      "min": 47.18,
+      "max": 47.51,
+      "avg_throughput": 2112.45
+    }
+  },
+  "comparison": {
+    "timestamp": "2026-02-08T10:45:12.789012",
+    "python_version": "3.15.0a3 (main, Jan 20 2026, 14:30:00) [GCC 11.4.0]",
+    "jit_enabled": true,
+    "num_runs": 5,
+    "total_records": 100000,
+    "run_times": [43.82, 43.91, 43.76, 43.88, 43.79],
+    "statistics": {
+      "mean": 43.832,
+      "std_dev": 0.062,
+      "min": 43.76,
+      "max": 43.91,
+      "avg_throughput": 2281.34
+    }
+  },
+  "analysis": {
+    "baseline_time": 47.348,
+    "comparison_time": 43.832,
+    "improvement_percent": 7.42,
+    "speedup_factor": 1.08,
+    "time_saved_seconds": 3.516,
+    "baseline_throughput": 2112.45,
+    "comparison_throughput": 2281.34
+  },
+  "roi_calculation": {
+    "time_saved_per_run": 3.516,
+    "runs_per_day": 156,
+    "daily_savings_minutes": 9.14,
+    "monthly_savings_hours": 55.7,
+    "annual_savings_hours": 667.2,
+    "annual_cost_savings_usd": 2700
+  }
+}
