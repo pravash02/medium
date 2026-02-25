@@ -74,7 +74,7 @@ def run_etl_queries(db):
     for product in db['products'].find():
         mock_stock = random.randint(0, 50)
         if mock_stock < 10:
-            print(f"  ⚠️  {product['name']:<25} — Only {mock_stock} left!")
+            print(f"  {product['name']:<25} — Only {mock_stock} left!")
 
 
 def upsert_demo(db):
@@ -106,7 +106,7 @@ def main():
     run_etl_queries(db)
     upsert_demo(db)
 
-    print("\n⚠️  PRODUCTION NOTE:")
+    print("\n PRODUCTION NOTE:")
     print("  Dataset is ideal for prototyping and ETL scripts.")
     print("  Migrate to SQLAlchemy when schema stabilises.")
     print("  Dataset does NOT handle migrations.")
