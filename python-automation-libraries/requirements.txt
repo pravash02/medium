@@ -1,0 +1,38 @@
+# Python Automation Libraries — Dependencies
+# Install with: pip install -r requirements.txt
+
+# 1. Beartype - Runtime type checking
+beartype>=0.18.0
+
+# 2. RQ - Redis-based task queue
+rq>=1.16.0
+redis>=5.0.0
+
+# 3. PyFilesystem2 - Unified filesystem abstraction
+fs>=2.4.16
+fs-s3fs>=1.1.1         # Optional: S3 backend
+fs.ftpfs>=0.2.10       # Optional: FTP backend
+
+# 4. Tortoise ORM - Async ORM
+tortoise-orm>=0.20.0
+aerich>=0.7.2          # Migrations for Tortoise ORM
+aiosqlite>=0.19.0      # SQLite async driver (for examples)
+asyncpg>=0.29.0        # PostgreSQL async driver (optional)
+
+# 5. cached-property - Built into Python 3.8+ (functools)
+# No install needed for Python >= 3.8
+# For Python < 3.8:
+# cached-property>=1.5.2
+
+# 6. pyairtable - Airtable API client
+pyairtable>=2.2.0
+
+# 7. Rich-Argparse - Beautiful CLI help
+rich-argparse>=1.4.0
+rich>=13.7.0
+
+# 8. Halo - Terminal spinners
+halo>=0.0.31
+
+# Utilities used across examples
+python-dotenv>=1.0.0   # Load .env files
